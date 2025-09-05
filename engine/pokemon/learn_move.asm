@@ -164,6 +164,7 @@ TryingToLearn:
 	ld a, [hl]
 	push af
 	push bc
+	call IsMoveHM
 	pop bc
 	pop de
 	ld a, d
