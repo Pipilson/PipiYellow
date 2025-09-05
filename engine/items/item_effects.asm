@@ -2895,7 +2895,7 @@ IsKeyItem_::
 	ld [wIsKeyItem], a
 	ld a, [wCurItem]
 	cp HM01 ; is the item an HM or TM?
-	ret nc
+	jr nc, .checkIfItemIsHM
 ; if the item is not an HM or TM
 	push af
 	ld hl, KeyItemFlags
@@ -2912,6 +2912,10 @@ IsKeyItem_::
 	ld a, c
 	and a
 	ret nz
+.checkIfItemIsHM
+	ld a, [wCurItem]
+	call IsItemHM
+	ret c
 	xor a
 	ld [wIsKeyItem], a
 	ret
