@@ -1320,8 +1320,3 @@ _HookedMonAttackedText::
 	text_start
 	cont "attacked!"
 	prompt
-
-_CantUsePCHere:: ; new, for portablePC
-	text "You cannot use"
-	line "this here!"
-	prompt
