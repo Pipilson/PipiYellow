@@ -9,6 +9,7 @@ LavenderPokecenter_TextPointers:
 	dw_const LavenderPokecenterLittleGirlText,       TEXT_LAVENDERPOKECENTER_LITTLE_GIRL
 	dw_const LavenderPokecenterLinkReceptionistText, TEXT_LAVENDERPOKECENTER_LINK_RECEPTIONIST
 	dw_const LavenderPokecenterChanseyText,          TEXT_LAVENDERPOKECENTER_CHANSEY
+	dw_const LavenderPokecenterTraderText,           TEXT_LAVENDERPOKECENTER_TRADER
 
 LavenderPokecenterLinkReceptionistText:
 	script_cable_club_receptionist
@@ -27,4 +28,11 @@ LavenderPokecenterLittleGirlText:
 LavenderPokecenterChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+LavenderPokecenterTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

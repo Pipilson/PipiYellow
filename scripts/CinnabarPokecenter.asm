@@ -9,6 +9,7 @@ CinnabarPokecenter_TextPointers:
 	dw_const CinnabarPokecenterGentlemanText,        TEXT_CINNABARPOKECENTER_GENTLEMAN
 	dw_const CinnabarPokecenterLinkReceptionistText, TEXT_CINNABARPOKECENTER_LINK_RECEPTIONIST
 	dw_const CinnabarPokecenterChanseyText,          TEXT_CINNABARPOKECENTER_CHANSEY
+	dw_const CinnabarPokecenterTraderText,           TEXT_CINNABARPOKECENTER_TRADER
 
 CinnabarPokecenterNurseText:
 	script_pokecenter_nurse
@@ -27,4 +28,11 @@ CinnabarPokecenterLinkReceptionistText:
 CinnabarPokecenterChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+CinnabarPokecenterTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

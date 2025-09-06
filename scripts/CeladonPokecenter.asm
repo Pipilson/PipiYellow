@@ -9,6 +9,7 @@ CeladonPokecenter_TextPointers:
 	dw_const CeladonPokecenterBeautyText,           TEXT_CELADONPOKECENTER_BEAUTY
 	dw_const CeladonPokecenterLinkReceptionistText, TEXT_CELADONPOKECENTER_LINK_RECEPTIONIST
 	dw_const CeladonPokecenterChanseyText,          TEXT_CELADONPOKECENTER_CHANSEY
+	dw_const CeladonPokecenterTraderText,           TEXT_CELADONPOKECENTER_TRADER
 
 CeladonPokecenterLinkReceptionistText:
 	script_cable_club_receptionist
@@ -27,4 +28,11 @@ CeladonPokecenterBeautyText:
 CeladonPokecenterChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+CeladonPokecenterTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

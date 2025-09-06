@@ -11,6 +11,7 @@ MtMoonPokecenter_TextPointers:
 	dw_const MtMoonPokecenterClipboardText,        TEXT_MTMOONPOKECENTER_CLIPBOARD
 	dw_const MtMoonPokecenterLinkReceptionistText, TEXT_MTMOONPOKECENTER_LINK_RECEPTIONIST
 	dw_const MtMoonPokecenterChanseyText,          TEXT_MTMOONPOKECENTER_CHANSEY
+	dw_const MtMoonPokecenterTraderText,           TEXT_MTMOONPOKECENTER_TRADER
 
 MtMoonPokecenterNurseText:
 	script_pokecenter_nurse
@@ -38,4 +39,11 @@ MtMoonPokecenterLinkReceptionistText:
 MtMoonPokecenterChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+MtMoonPokecenterTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

@@ -22,6 +22,7 @@ IndigoPlateauLobby_TextPointers:
 	dw_const IndigoPlateauLobbyClerkText,            TEXT_INDIGOPLATEAULOBBY_CLERK
 	dw_const IndigoPlateauLobbyLinkReceptionistText, TEXT_INDIGOPLATEAULOBBY_LINK_RECEPTIONIST
 	dw_const IndigoPlateauLobbyChanseyText,          TEXT_INDIGOPLATEAULOBBY_CHANSEY
+	dw_const IndigoPlateauLobbyTraderText,          TEXT_INDIGOPLATEAULOBBY_TRADER
 
 IndigoPlateauLobbyNurseText:
 	script_pokecenter_nurse
@@ -40,4 +41,11 @@ IndigoPlateauLobbyLinkReceptionistText:
 IndigoPlateauLobbyChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+IndigoPlateauLobbyTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

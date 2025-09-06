@@ -9,6 +9,7 @@ FuchsiaPokecenter_TextPointers:
 	dw_const FuchsiaPokecenterCooltrainerFText,     TEXT_FUCHSIAPOKECENTER_COOLTRAINER_F
 	dw_const FuchsiaPokecenterLinkReceptionistText, TEXT_FUCHSIAPOKECENTER_LINK_RECEPTIONIST
 	dw_const FuchsiaPokecenterChanseyText,          TEXT_FUCHSIAPOKECENTER_CHANSEY
+	dw_const FuchsiaPokecenterTraderText,           TEXT_FUCHSIAPOKECENTER_TRADER
 
 FuchsiaPokecenterNurseText:
 	script_pokecenter_nurse
@@ -27,4 +28,11 @@ FuchsiaPokecenterLinkReceptionistText:
 FuchsiaPokecenterChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+FuchsiaPokecenterTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

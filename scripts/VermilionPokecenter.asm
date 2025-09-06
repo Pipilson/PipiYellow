@@ -9,6 +9,7 @@ VermilionPokecenter_TextPointers:
 	dw_const VermilionPokecenterSailorText,           TEXT_VERMILIONPOKECENTER_SAILOR
 	dw_const VermilionPokecenterLinkReceptionistText, TEXT_VERMILIONPOKECENTER_LINK_RECEPTIONIST
 	dw_const VermilionPokecenterChanseyText,          TEXT_VERMILIONPOKECENTER_CHANSEY
+	dw_const VermilionPokecenterTraderText,          TEXT_VERMILIONPOKECENTER_TRADER
 
 VermilionPokecenterNurseText:
 	script_pokecenter_nurse
@@ -27,4 +28,11 @@ VermilionPokecenterLinkReceptionistText:
 VermilionPokecenterChanseyText:
 	text_asm
 	callfar PokecenterChanseyText
+	jp TextScriptEnd
+
+VermilionPokecenterTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
 	jp TextScriptEnd

@@ -214,3 +214,21 @@ _CableClubNPCPleaseApplyHereHaveToSaveText::
 	line "the link, we have"
 	cont "to save the game."
 	done
+
+_WannaTrade4Text::
+	text "I'm the TRADER!"
+	para "I can trade your"
+	line "own #MON back"
+	cont "to you."
+	para "Wanna trade?"
+	done
+	
+_NoTrade4Text::
+	text "Ok, maybe next"
+	line "time then."
+	done
+	
+_Thanks4Text::
+	text "All done, I hope"
+	line "that helped."
+	done
