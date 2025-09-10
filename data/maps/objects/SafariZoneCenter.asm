@@ -5,8 +5,8 @@ SafariZoneCenter_Object:
 	db $0 ; border block
 
 	def_warp_events
-	warp_event 14, 25, SAFARI_ZONE_GATE, 3
-	warp_event 15, 25, SAFARI_ZONE_GATE, 4
+	warp_event 14, 25, FUCHSIA_CITY, 5
+	warp_event 15, 25, FUCHSIA_CITY, 5
 	warp_event  0, 10, SAFARI_ZONE_WEST, 5
 	warp_event  0, 11, SAFARI_ZONE_WEST, 6
 	warp_event 14,  0, SAFARI_ZONE_NORTH, 5
