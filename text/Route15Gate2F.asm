@@ -1,14 +1,9 @@
 _Route15Gate2FOaksAideExpAllText::
-	text "EXP.ALL gives"
+	text "EXP.SHARE gives"
 	line "EXP points to all"
 	cont "the #MON with"
 	cont "you, even if they"
 	cont "don't fight."
-
-	para "It does, however,"
-	line "reduce the amount"
-	cont "of EXP for each"
-	cont "#MON."
 
 	para "If you don't need"
 	line "it, you should "
