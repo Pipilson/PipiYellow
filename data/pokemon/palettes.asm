@@ -81,8 +81,8 @@ MonsterPalettes:
 	db PAL_REDMON    ; RAPIDASH		Cor-Vermelho
 	db PAL_PINKMON   ; SLOWPOKE		Cor-Rosa
 	db PAL_PINKMON   ; SLOWBRO		Cor-Rosa
-	db PAL_MACHOMON  ; MAGNEMITE	Cor-Cinza
-	db PAL_MACHOMON  ; MAGNETON		Cor-Cinza
+	db PAL_MACHOMON  ; MAGNEMITE	Cor-CinzaAzul
+	db PAL_MACHOMON  ; MAGNETON		Cor-CinzaAzul
 	db PAL_BROWNMON  ; FARFETCHD 	Cor-Marrom
 	db PAL_BROWNMON  ; DODUO		Cor-Marrom
 	db PAL_BROWNMON  ; DODRIO		Cor-Marrom
