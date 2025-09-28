@@ -183,7 +183,7 @@ SetPal_Overworld:
 	ld a, PAL_GRAYMON - 1
 	jr .town
 .caveOrBruno
-	ld a, PAL_CAVE - 1
+	ld a, PAL_BADGE - 1
 	jr .town
 .Lorelei
 	xor a
@@ -351,7 +351,7 @@ LoadOverworldPikachuFrontpicPalettes::
 	ld hl, wPartyMenuBlkPacket
 	ld [hl], a
 	ld hl, wPartyMenuBlkPacket + 2
-	ld a, PAL_PIKACHU_PORTRAIT
+	ld a, PAL_PIKAMON
 	ld [hl], a
 	ld hl, wPalPacket
 	ldh a, [hOnCGB]
@@ -427,7 +427,7 @@ GetPal_Pikachu::
 	jr .town
 
 .caveOrBruno
-	ld a, PAL_CAVE - 1
+	ld a, PAL_BADGE - 1
 	jr .town
 
 .Lorelei

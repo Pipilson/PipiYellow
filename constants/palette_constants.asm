@@ -45,17 +45,17 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_PIKAMON              ; $10
 	const PAL_BLUEMON              ; $11
 	const PAL_REDMON               ; $12
-	const PAL_CYANMON              ; $13
+	const PAL_SNAKEMON             ; $13
 	const PAL_PURPLEMON            ; $14
 	const PAL_BROWNMON             ; $15
 	const PAL_GREENMON             ; $16
 	const PAL_PINKMON              ; $17
 	const PAL_YELLOWMON            ; $18
 	const PAL_GRAYMON              ; $19
-	const PAL_AEROMON              ; $1A
-	const PAL_MACHOMON             ; $1B
-	const PAL_ORANGEMON            ; $1C
-	const PAL_VIOLETMON            ; $1D
+	const PAL_FISHMON              ; $1A
+	const PAL_DIGMON               ; $1B
+	const PAL_CATMON               ; $1C
+	const PAL_TREEMON              ; $1D
 	const PAL_BLACK                ; $1E
 	const PAL_GREENBAR             ; $1F
 	const PAL_YELLOWBAR            ; $20
