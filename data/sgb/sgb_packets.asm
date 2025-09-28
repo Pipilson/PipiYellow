@@ -141,7 +141,7 @@ PalPacket_PartyMenu:          PAL_SET PAL_PIKAMON, PAL_GREENBAR, PAL_YELLOWBAR, 
 PalPacket_Black:              PAL_SET PAL_BLACK, PAL_BLACK, PAL_BLACK, PAL_BLACK
 PalPacket_TownMap:            PAL_SET PAL_ROUTE, 0, 0, 0
 PalPacket_Pokedex:            PAL_SET PAL_BROWNMON, 0, 0, 0
-PalPacket_Slots:              PAL_SET PAL_REDMON, PAL_GREENMON, PAL_BLUEMON, PAL_YELLOWMON
+PalPacket_Slots:              PAL_SET PAL_SNAKEMON, PAL_CINNABAR, PAL_CELADON, PAL_CERULEAN
 PalPacket_Titlescreen:        PAL_SET PAL_LOGO2, PAL_PIKAMON, PAL_PIKAMON, PAL_PURPLEMON
 PalPacket_TrainerCard:        PAL_SET PAL_PIKAMON, PAL_BADGE, PAL_REDMON, PAL_YELLOWMON
 PalPacket_Generic:            PAL_SET PAL_PIKAMON, 0, 0, 0
