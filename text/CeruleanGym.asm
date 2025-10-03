@@ -133,3 +133,45 @@ _CeruleanGymGymGuideBeatMistyText::
 	line "we make a pretty"
 	cont "darn good team!"
 	done
+
+_CeruleanGymRematchPreBattleText::
+	text "Since our last"
+	line "battle, my"
+	
+	para "#MON have"
+	line "grown!"
+
+	para "Ready for the"
+	line "rematch of a"
+	cont "lifetime?"
+	done
+
+_CeruleanGymRematchAcceptedText::
+	text "Let's battle!"
+	done
+
+_CeruleanGymRematchRefusedText::
+	text "Maybe some other"
+	line "time."
+	done
+
+_CeruleanGymRematchDefeatedText::
+	text "I knew"
+	line "you were strong,"
+	cont "but this..."
+	prompt
+
+_CeruleanGymRematchPostBattleText::
+	text "Incredible!"
+
+	para "Your strength"
+	line "is unmatched!"
+
+	para "True to your"
+	line "title, CHAMPION."
+
+	para "Continue to lead"
+	line "#MON with"
+	cont "honor and"
+	cont "courage!"
+	done

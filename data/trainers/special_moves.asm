@@ -18,8 +18,62 @@ SpecialTrainerMoves:
 	db 2, 4, BIDE
 	db 0
 
+	db BROCK, 2
+	db 1, 1, ROCK_SLIDE
+	db 1, 2, EARTHQUAKE
+	db 1, 3, BODY_SLAM
+	db 1, 4, HARDEN
+	db 2, 1, SURF
+	db 2, 2, ICE_BEAM
+	db 2, 3, SUBMISSION
+	db 2, 4, LEER
+	db 3, 1, EARTHQUAKE
+	db 3, 2, ROCK_SLIDE
+	db 3, 3, BODY_SLAM
+	db 3, 4, THUNDERBOLT
+	db 4, 1, FLY
+	db 4, 2, BITE
+	db 4, 3, FIRE_BLAST
+	db 4, 4, TOXIC
+	db 5, 1, SURF
+	db 5, 2, ABSORB
+	db 5, 3, ICE_BEAM
+	db 5, 4, SLASH
+	db 6, 1, ROCK_SLIDE
+	db 6, 2, EARTHQUAKE
+	db 6, 3, BODY_SLAM
+	db 6, 4, FIRE_BLAST
+	db 0
+
 	db MISTY, 1
 	db 2, 4, BUBBLEBEAM
+	db 0
+
+	db MISTY, 2
+	db 1, 1, SURF
+	db 1, 2, ACID
+	db 1, 3, ICE_BEAM
+	db 1, 4, MEGA_DRAIN
+	db 2, 1, HYDRO_PUMP
+	db 2, 2, BODY_SLAM
+	db 2, 3, EARTHQUAKE
+	db 2, 4, SUBMISSION
+	db 3, 1, SURF
+	db 3, 2, ICE_BEAM
+	db 3, 3, BITE
+	db 3, 4, QUICK_ATTACK
+	db 4, 1, SURF
+	db 4, 2, ICE_BEAM
+	db 4, 3, CONFUSE_RAY
+	db 4, 4, REST
+	db 5, 1, HYDRO_PUMP
+	db 5, 2, HYPER_BEAM
+	db 5, 3, THUNDER
+	db 5, 4, FIRE_BLAST
+	db 6, 1, HYDRO_PUMP
+	db 6, 2, PSYCHIC_M
+	db 6, 3, THUNDERBOLT
+	db 6, 4, RECOVER
 	db 0
 
 	db LT_SURGE, 1
@@ -29,10 +83,64 @@ SpecialTrainerMoves:
 	db 1, 4, GROWL
 	db 0
 
+	db LT_SURGE, 2
+	db 1, 1, THUNDERBOLT
+	db 1, 2, DOUBLE_KICK
+	db 1, 3, SAND_ATTACK
+	db 1, 4, THUNDER_WAVE
+	db 2, 1, THUNDERBOLT
+	db 2, 2, SUBMISSION
+	db 2, 3, BODY_SLAM
+	db 2, 4, PSYCHIC_M
+	db 3, 1, THUNDER
+	db 3, 2, BODY_SLAM
+	db 3, 3, EARTHQUAKE
+	db 3, 4, ICE_BEAM
+	db 4, 1, THUNDERBOLT
+	db 4, 2, SWIFT
+	db 4, 3, REFLECT
+	db 4, 4, REST
+	db 5, 1, THUNDER
+	db 5, 2, THUNDERBOLT
+	db 5, 3, SWIFT
+	db 5, 4, DOUBLE_TEAM
+	db 6, 1, THUNDERBOLT
+	db 6, 2, BODY_SLAM
+	db 6, 3, SUBMISSION
+	db 6, 4, THUNDER_WAVE
+	db 0
+
 	db ERIKA, 1
 	db 1, 3, MEGA_DRAIN
 	db 2, 1, RAZOR_LEAF
 	db 3, 1, PETAL_DANCE
+	db 0
+
+	db ERIKA, 2
+	db 1, 1, MEGA_DRAIN
+	db 1, 2, LEECH_LIFE
+	db 1, 3, GROWTH
+	db 1, 4, SPORE
+	db 2, 1, RAZOR_LEAF
+	db 2, 2, ACID
+	db 2, 3, BODY_SLAM
+	db 2, 4, REFLECT
+	db 3, 1, PETAL_DANCE
+	db 3, 2, ACID
+	db 3, 3, BODY_SLAM
+	db 3, 4, STUN_SPORE
+	db 4, 1, MEGA_DRAIN
+	db 4, 2, BIND
+	db 4, 3, GROWTH
+	db 4, 4, SWORDS_DANCE
+	db 5, 1, SOLARBEAM
+	db 5, 2, BODY_SLAM
+	db 5, 3, TOXIC
+	db 5, 4, LEECH_SEED
+	db 6, 1, SOLARBEAM
+	db 6, 2, PSYCHIC_M
+	db 6, 3, EGG_BOMB
+	db 6, 4, SLEEP_POWDER
 	db 0
 
 	db KOGA, 1
