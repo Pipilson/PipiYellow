@@ -38,8 +38,8 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_CINNABAR             ; $09
 	const PAL_INDIGO               ; $0A
 	const PAL_SAFFRON              ; $0B
-	const PAL_TOWNMAP              ; $0C
-	const PAL_LOGO1                ; $0D
+	const PAL_SLOWMON              ; $0C
+	const PAL_STONEMON             ; $0D
 	const PAL_LOGO2                ; $0E
 	const PAL_PORYMON              ; $0F
 	const PAL_PIKAMON              ; $10
@@ -60,10 +60,10 @@ DEF SET_PAL_DEFAULT EQU $ff
 	const PAL_GREENBAR             ; $1F
 	const PAL_YELLOWBAR            ; $20
 	const PAL_REDBAR               ; $21
-	const PAL_BADGE                ; $22
-	const PAL_CAVE                 ; $23
-	const PAL_GAMEFREAK            ; $24
-	const PAL_PIKACHUS_BEACH       ; $25
-	const PAL_PIKACHU_PORTRAIT     ; $26
-	const PAL_PIKACHUS_BEACH_TITLE ; $27
+	const PAL_CAVE                 ; $22
+	const PAL_MAGNETMON            ; $23
+	const PAL_MEWTWOMON            ; $24
+	const PAL_BULBAMON             ; $25
+	const PAL_ROCKMON     	       ; $26
+	const PAL_STARMON 			   ; $27
 DEF NUM_SGB_PALS EQU const_value

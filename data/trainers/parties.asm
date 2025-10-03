@@ -653,6 +653,7 @@ BrunoData:
 
 BrockData:
 	db $FF, 10, GEODUDE, 12, ONIX, 0
+	db $FF, 30, GOLEM, 34, ONIX, 0
 
 MistyData:
 	db $FF, 18, STARYU, 21, STARMIE, 0

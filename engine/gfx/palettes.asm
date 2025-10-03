@@ -183,7 +183,7 @@ SetPal_Overworld:
 	ld a, PAL_GRAYMON - 1
 	jr .town
 .caveOrBruno
-	ld a, PAL_BADGE - 1
+	ld a, PAL_CAVE - 1
 	jr .town
 .Lorelei
 	xor a
@@ -427,7 +427,7 @@ GetPal_Pikachu::
 	jr .town
 
 .caveOrBruno
-	ld a, PAL_BADGE - 1
+	ld a, PAL_CAVE - 1
 	jr .town
 
 .Lorelei
