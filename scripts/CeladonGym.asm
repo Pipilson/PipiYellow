@@ -42,7 +42,7 @@ CeladonGymErikaPostBattleScript:
 	jp z, CeladonGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	CheckEvent EVENT_BEAT_BROCK
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
 	jr z, CeladonGymReceiveTM21	
 	ld a, TEXT_CELADONGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
@@ -120,7 +120,7 @@ CeladonGymErikaText:
 	call DisableWaitingAfterTextDisplay
 	jr .done
 .afterBeat
-	CheckEvent EVENT_BEAT_BROCK
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
 	jr nz, .ErikaRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText
