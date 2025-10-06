@@ -350,7 +350,7 @@ SpecialTrainerMoves:
 	db 1, 4, DOUBLE_TEAM
 	db 2, 1, SUBMISSION
 	db 2, 2, ICE_PUNCH
-	db 2, 3, THUNDER_PUNCH
+	db 2, 3, THUNDERPUNCH
 	db 2, 4, FIRE_PUNCH
 	db 3, 1, ROCK_SLIDE
 	db 3, 2, EARTHQUAKE
@@ -460,25 +460,31 @@ SpecialTrainerMoves:
 	db 6, 3, QUICK_ATTACK
 	db 0
 
-	db RIVAL3, 2
-	db 1, 3, EARTHQUAKE
-	db 2, 4, KINESIS
-	db 3, 4, LEECH_SEED
-	db 4, 1, THUNDERBOLT
-	db 5, 1, ICE_BEAM
-	db 6, 2, REFLECT
-	db 6, 3, QUICK_ATTACK
-	db 0
-
-	db RIVAL3, 3
-	db 1, 3, EARTHQUAKE
-	db 2, 4, KINESIS
-	db 3, 4, LEECH_SEED
-	db 4, 1, CONFUSE_RAY
-	db 4, 4, FIRE_SPIN
-	db 5, 1, THUNDERBOLT
-	db 6, 1, AURORA_BEAM
-	db 6, 3, QUICK_ATTACK
+    db RIVAL3, 2
+	db 1, 1, BODY_SLAM
+	db 1, 2, EARTHQUAKE
+	db 1, 3, BLIZZARD
+	db 1, 4, THUNDERBOLT
+	db 2, 1, PSYCHIC_M
+	db 2, 2, BODY_SLAM
+	db 2, 3, THUNDER_WAVE
+	db 2, 4, RECOVER
+	db 3, 1, MEGA_DRAIN
+	db 3, 2, PSYCHIC_M
+	db 3, 3, STRENGTH
+	db 3, 4, SLEEP_POWDER
+	db 4, 1, FIRE_BLAST
+	db 4, 2, BODY_SLAM
+	db 4, 3, SUBSTITUTE
+	db 4, 4, REST
+	db 5, 1, SURF
+	db 5, 2, PSYCHIC_M
+	db 5, 3, MINIMIZE
+	db 5, 4, RECOVER
+	db 6, 1, THUNDERBOLT
+	db 6, 2, DOUBLE_KICK
+	db 6, 3, BODY_SLAM
+	db 6, 4, PIN_MISSILE
 	db 0
 
 	db -1 ; end
