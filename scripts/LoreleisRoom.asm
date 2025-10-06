@@ -129,8 +129,29 @@ LoreleisRoomTrainerHeader0:
 
 LoreleisRoomLoreleiText:
 	text_asm
-	ld hl, LoreleisRoomTrainerHeader0
-	call TalkToTrainer
+	CheckEvent EVENT_BEAT_LORELEIS_ROOM_TRAINER_0
+	jr z, .BeforeBattleText
+	jr nz, .AfterBattleText
+.AfterBattleText
+	ld hl, LoreleisRoomLoreleiAfterBattleText
+	call PrintText
+	jp TextScriptEnd
+.BeforeBattleText
+	ld hl, LoreleisRoomLoreleiBeforeBattleText
+	call PrintText
+	ld a, OPP_LORELEI
+	ld [wCurOpponent], a
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .Rematch
+	ld a, 1
+	ld [wTrainerNo], a
+	jr .done
+	jp TextScriptEnd
+.Rematch
+	ld a, 2
+	ld [wTrainerNo], a
+.done
+    SetEvent EVENT_BEAT_LORELEIS_ROOM_TRAINER_0
 	jp TextScriptEnd
 
 LoreleisRoomLoreleiBeforeBattleText:

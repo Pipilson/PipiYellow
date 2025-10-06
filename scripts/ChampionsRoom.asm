@@ -26,6 +26,16 @@ ChampionsRoom_ScriptPointers:
 	dw_const ChampionsRoomCleanupScript,                  SCRIPT_CHAMPIONSROOM_CLEANUP_SCRIPT
 
 ChampionsRoomDefaultScript:
+    ld a, PAD_BUTTONS | PAD_CTRL_PAD
+	ld [wJoyIgnore], a
+	ld hl, wSimulatedJoypadStatesEnd
+	ld de, RivalEntrance_RLEMovement
+	call DecodeRLEList
+	dec a
+	ld [wSimulatedJoypadStatesIndex], a
+	call StartSimulatingJoypadStates
+	ld a, SCRIPT_CHAMPIONSROOM_RIVAL_READY_TO_BATTLE
+	ld [wChampionsRoomCurScript], a
 	ret
 
 ChampionsRoomPlayerEntersScript:
@@ -70,15 +80,22 @@ ChampionsRoomRivalReadyToBattleScript:
 	ld [wCurOpponent], a
 
 	; select which team to use during the encounter
-	ld a, [wRivalStarter]
-	add $0 ; Wow GameFreak
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .Rematch
+	ld a, 1
 	ld [wTrainerNo], a
-
+	jr .done
+	jp TextScriptEnd
+.Rematch
+	ld a, 2
+	ld [wTrainerNo], a
+.done
 	xor a
 	ldh [hJoyHeld], a
 	ld a, SCRIPT_CHAMPIONSROOM_RIVAL_DEFEATED
 	ld [wChampionsRoomCurScript], a
 	ret
+	jp TextScriptEnd
 
 ChampionsRoomRivalDefeatedScript:
 	ld a, [wIsInBattle]

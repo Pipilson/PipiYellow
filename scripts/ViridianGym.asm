@@ -134,7 +134,7 @@ ViridianGymGiovanniPostBattle:
 	jp z, ViridianGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr z, ViridianGymReceiveTM27	
 	ld a, TEXT_VIRIDIANGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
@@ -223,7 +223,7 @@ ViridianGymGiovanniText:
 .afterBeat
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr nz, .GiovanniRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText

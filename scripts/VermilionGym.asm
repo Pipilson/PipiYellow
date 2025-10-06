@@ -61,7 +61,7 @@ VermilionGymLTSurgeAfterBattleScript:
 	jp z, VermilionGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr z, VermilionGymLTSurgeReceiveTM24Script	
 	ld a, TEXT_VERMILIONGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
@@ -128,7 +128,7 @@ VermilionGymLTSurgeText:
 	call DisableWaitingAfterTextDisplay
 	jr .text_script_end
 .got_tm24_already
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr nz, .LTSurgeRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText

@@ -127,8 +127,29 @@ BrunosRoomTrainerHeader0:
 
 BrunosRoomBrunoText:
 	text_asm
-	ld hl, BrunosRoomTrainerHeader0
-	call TalkToTrainer
+	CheckEvent EVENT_BEAT_BRUNOS_ROOM_TRAINER_0
+	jr z, .BeforeBattleText
+	jr nz, .AfterBattleText
+.AfterBattleText
+	ld hl, BrunoAfterBattleText
+	call PrintText
+	jp TextScriptEnd
+.BeforeBattleText
+	ld hl, BrunoBeforeBattleText
+	call PrintText
+	ld a, OPP_BRUNO
+	ld [wCurOpponent], a
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .Rematch
+	ld a, 1
+	ld [wTrainerNo], a
+	jr .done
+	jp TextScriptEnd
+.Rematch
+	ld a, 2
+	ld [wTrainerNo], a
+.done
+    SetEvent EVENT_BEAT_BRUNOS_ROOM_TRAINER_0
 	jp TextScriptEnd
 
 BrunoBeforeBattleText:

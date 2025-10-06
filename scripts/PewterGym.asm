@@ -43,7 +43,7 @@ PewterGymBrockPostBattle:
 	jp z, PewterGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr z, PewterGymScriptReceiveTM34	
 	ld a, TEXT_PEWTERGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
@@ -113,7 +113,7 @@ PewterGymBrockText:
 	call DisableWaitingAfterTextDisplay
 	jr .done
 .afterBeat
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr nz, .BrockRematch
 	ld hl, .PostBattleAdviceText
 	call PrintText

@@ -42,7 +42,7 @@ CeruleanGymMistyPostBattleScript:
 	jp z, CeruleanGymResetScripts
 	ld a, PAD_CTRL_PAD
 	ld [wJoyIgnore], a
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr z, CeruleanGymReceiveTM11	
 	ld a, TEXT_CERULEANGYM_REMATCH_POST_BATTLE
 	ldh [hTextID], a
@@ -106,7 +106,7 @@ CeruleanGymMistyText:
 	call DisableWaitingAfterTextDisplay
 	jr .done
 .afterBeat
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
 	jr nz, .MistyRematch
 	ld hl, .TM11ExplanationText
 	call PrintText

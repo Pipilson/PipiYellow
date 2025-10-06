@@ -52,7 +52,7 @@ LancesRoomNoopScript:
 	ret
 
 LancesRoomDefaultScript:
-	CheckEvent EVENT_BEAT_LANCE
+	CheckEvent EVENT_BEAT_LANCES_ROOM_TRAINER_0
 	ret nz
 	ld hl, LanceTriggerMovementCoords
 	call ArePlayerCoordsInArray
@@ -138,8 +138,29 @@ LancesRoomTrainerHeader0:
 
 LancesRoomLanceText:
 	text_asm
-	ld hl, LancesRoomTrainerHeader0
-	call TalkToTrainer
+	CheckEvent EVENT_BEAT_LANCES_ROOM_TRAINER_0
+	jr z, .BeforeBattleText
+	jr nz, .AfterBattleText
+.AfterBattleText
+	ld hl, LancesRoomLanceAfterBattleText
+	call PrintText
+	jp TextScriptEnd
+.BeforeBattleText
+	ld hl, LancesRoomLanceBeforeBattleText
+	call PrintText
+	ld a, OPP_LANCE
+	ld [wCurOpponent], a
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .Rematch
+	ld a, 1
+	ld [wTrainerNo], a
+	jr .done
+	jp TextScriptEnd
+.Rematch
+	ld a, 2
+	ld [wTrainerNo], a
+.done
+    SetEvent EVENT_BEAT_LANCES_ROOM_TRAINER_0
 	jp TextScriptEnd
 
 LancesRoomLanceBeforeBattleText:
@@ -153,5 +174,5 @@ LancesRoomLanceEndBattleText:
 LancesRoomLanceAfterBattleText:
 	text_far _LancesRoomLanceAfterBattleText
 	text_asm
-	SetEvent EVENT_BEAT_LANCE
+	;SetEvent EVENT_BEAT_LANCE
 	jp TextScriptEnd
