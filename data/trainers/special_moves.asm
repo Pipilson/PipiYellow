@@ -156,6 +156,33 @@ SpecialTrainerMoves:
 	db 4, 4, TOXIC
 	db 0
 
+	db KOGA, 2
+	db 1, 1, MEGA_DRAIN
+	db 1, 2, WING_ATTACK
+	db 1, 3, CONFUSE_RAY
+	db 1, 4, DOUBLE_TEAM
+	db 2, 1, SURF
+	db 2, 2, ACID
+	db 2, 3, WRAP
+	db 2, 4, TOXIC
+	db 3, 1, SLUDGE
+	db 3, 2, FIRE_BLAST
+	db 3, 3, THUNDER
+	db 3, 4, SMOKESCREEN
+	db 4, 1, RAZOR_LEAF
+	db 4, 2, ACID
+	db 4, 3, GROWTH
+	db 4, 4, TOXIC
+	db 5, 1, SLUDGE
+	db 5, 2, REST
+	db 5, 3, ACID_ARMOR
+	db 5, 4, MINIMIZE
+	db 6, 1, MEGA_DRAIN
+	db 6, 2, PSYCHIC_M
+	db 6, 3, SUBSTITUTE
+	db 6, 4, DOUBLE_TEAM
+	db 0
+
 	db BLAINE, 1
 	db 1, 1, FLAMETHROWER
 	db 1, 4, CONFUSE_RAY
@@ -164,11 +191,65 @@ SpecialTrainerMoves:
 	db 3, 3, REFLECT
 	db 0
 
+	db BLAINE, 2
+	db 1, 1, FLAMETHROWER
+	db 1, 2, SMOG
+	db 1, 3, SMOKESCREEN
+	db 1, 4, CONFUSE_RAY
+	db 2, 1, FLAMETHROWER
+	db 2, 2, BODY_SLAM
+	db 2, 3, QUICK_ATTACK
+	db 2, 4, SAND_ATTACK
+	db 3, 1, FLAMETHROWER
+	db 3, 2, FLY
+	db 3, 3, SLASH
+	db 3, 4, EARTHQUAKE
+	db 4, 1, FIRE_BLAST
+	db 4, 2, STOMP
+	db 4, 3, HYPER_BEAM
+	db 4, 4, AGILITY
+	db 5, 1, FLAMETHROWER
+	db 5, 2, DIG
+	db 5, 3, SWIFT
+	db 5, 4, CONFUSE_RAY
+	db 6, 1, FIRE_BLAST
+	db 6, 2, BODY_SLAM
+	db 6, 3, DIG
+	db 6, 4, SWIFT
+	db 0
+
 	db SABRINA, 1
 	db 1, 1, FLASH
 	db 2, 1, KINESIS
 	db 2, 4, PSYWAVE
 	db 3, 1, PSYWAVE
+	db 0
+
+	db SABRINA, 2
+	db 1, 1, SURF
+	db 1, 2, PSYCHIC_M
+	db 1, 3, FIRE_BLAST
+	db 1, 4, AMNESIA
+	db 2, 1, ICE_BEAM
+	db 2, 2, PSYCHIC_M
+	db 2, 3, BUBBLEBEAM
+	db 2, 4, LOVELY_KISS
+	db 3, 1, MEGA_DRAIN
+	db 3, 2, PSYCHIC_M
+	db 3, 3, DOUBLE_EDGE
+	db 3, 4, LEECH_SEED
+	db 4, 1, SURF
+	db 4, 2, PSYCHIC_M
+	db 4, 3, RECOVER
+	db 4, 4, LIGHT_SCREEN
+	db 5, 1, PSYCHIC_M
+	db 5, 2, DREAM_EATER
+	db 5, 3, FLASH
+	db 5, 4, HYPNOSIS
+	db 6, 1, PSYCHIC_M
+	db 6, 2, BODY_SLAM
+	db 6, 3, RECOVER
+	db 6, 4, KINESIS
 	db 0
 
 	db GIOVANNI, 3
@@ -181,6 +262,33 @@ SpecialTrainerMoves:
 	db 4, 3, THUNDER
 	db 5, 1, ROCK_SLIDE
 	db 5, 4, EARTHQUAKE
+	db 0
+
+	db GIOVANNI, 4
+	db 1, 1, EARTHQUAKE
+	db 1, 2, ROCK_SLIDE
+	db 1, 3, SLASH
+	db 1, 4, TOXIC
+	db 2, 1, EARTHQUAKE
+	db 2, 2, THUNDERBOLT
+	db 2, 3, ICE_BEAM
+	db 2, 4, FIRE_BLAST
+	db 3, 1, ROCK_SLIDE
+	db 3, 2, EARTHQUAKE
+	db 3, 3, EXPLOSION
+	db 3, 4, FIRE_BLAST
+	db 4, 1, EARTHQUAKE
+	db 4, 2, BODY_SLAM
+	db 4, 3, SUBMISSION
+	db 4, 4, SWORDS_DANCE
+	db 5, 1, EARTHQUAKE
+	db 5, 2, HYPER_BEAM
+	db 5, 3, THUNDER
+	db 5, 4, BLIZZARD
+	db 6, 1, EARTHQUAKE
+	db 6, 2, ROCK_SLIDE
+	db 6, 3, SURF
+	db 6, 4, THUNDER
 	db 0
 
 	db LORELEI, 1

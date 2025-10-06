@@ -253,3 +253,45 @@ _CinnabarGymText_7::
 	text "Come on, answer"
 	line "the question!"
 	done
+
+_CinnabarGymRematchPreBattleText::
+	text "Since our last"
+	line "battle, my"
+	
+	para "#MON have"
+	line "grown!"
+
+	para "Ready for the"
+	line "rematch of a"
+	cont "lifetime?"
+	done
+
+_CinnabarGymRematchAcceptedText::
+	text "Let's battle!"
+	done
+
+_CinnabarGymRematchRefusedText::
+	text "Maybe some other"
+	line "time."
+	done
+
+_CinnabarGymRematchDefeatedText::
+	text "I knew"
+	line "you were strong,"
+	cont "but this..."
+	prompt
+
+_CinnabarGymRematchPostBattleText::
+	text "Incredible!"
+
+	para "Your strength"
+	line "is unmatched!"
+
+	para "True to your"
+	line "title, CHAMPION."
+
+	para "Continue to lead"
+	line "#MON with"
+	cont "honor and"
+	cont "courage!"
+	done

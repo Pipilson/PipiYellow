@@ -219,3 +219,45 @@ _FuchsiaGymGymGuideBeatKogaText::
 	line "ninja can terrify"
 	cont "even now!"
 	done
+	
+_FuchsiaGymRematchPreBattleText::
+	text "Since our last"
+	line "battle, my"
+	
+	para "#MON have"
+	line "grown!"
+
+	para "Ready for the"
+	line "rematch of a"
+	cont "lifetime?"
+	done
+
+_FuchsiaGymRematchAcceptedText::
+	text "Let's battle!"
+	done
+
+_FuchsiaGymRematchRefusedText::
+	text "Maybe some other"
+	line "time."
+	done
+
+_FuchsiaGymRematchDefeatedText::
+	text "I knew"
+	line "you were strong,"
+	cont "but this..."
+	prompt
+
+_FuchsiaGymRematchPostBattleText::
+	text "Incredible!"
+
+	para "Your strength"
+	line "is unmatched!"
+
+	para "True to your"
+	line "title, CHAMPION."
+
+	para "Continue to lead"
+	line "#MON with"
+	cont "honor and"
+	cont "courage!"
+	done
