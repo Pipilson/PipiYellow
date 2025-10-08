@@ -227,6 +227,8 @@ FightingDojoHitmonleePokeBallText:
 	text_asm
 	CheckEitherEventSet EVENT_GOT_HITMONLEE, EVENT_GOT_HITMONCHAN
 	jr z, .GetMon
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .GetMon
 	ld hl, FightingDojoBetterNotGetGreedyText
 	call PrintText
 	jr .done
@@ -261,6 +263,8 @@ FightingDojoHitmonchanPokeBallText:
 	text_asm
 	CheckEitherEventSet EVENT_GOT_HITMONLEE, EVENT_GOT_HITMONCHAN
 	jr z, .GetMon
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jr nz, .GetMon
 	ld hl, FightingDojoBetterNotGetGreedyText
 	call PrintText
 	jr .done

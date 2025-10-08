@@ -102,6 +102,32 @@ HallOfFameOakCongratulationsScript:
 	SetEvent EVENT_PLAYER_IS_CHAMPION
 	ld a, SCRIPT_HALLOFFAME_RESET_EVENTS_AND_SAVE
 	ld [wHallOfFameCurScript], a
+	; Reseta Eevee
+	ld a, HS_CELADON_MANSION_EEVEE_GIFT
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+	; Reseta o fóssil não escolhido
+	CheckEvent EVENT_GOT_EXTRA_FOSSIL
+	ret nz ; se já pegou o fóssil extra, pula toda a lógica
+	CheckEvent EVENT_GOT_DOME_FOSSIL
+	jp nz, .ShowFossil2 ; se pegou o Dome, mostra o Helix (fóssil 2)
+	CheckEvent EVENT_GOT_HELIX_FOSSIL
+	jp nz, .ShowFossil1 ; se pegou o Helix, mostra o Dome (fóssil 1)
+	jr .SkipFossil ; caso não tenha pego nenhum, não faz nada
+.ShowFossil1
+	ld a, HS_MT_MOON_B2F_FOSSIL_1
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+	SetEvent EVENT_GOT_EXTRA_FOSSIL
+	jr .SkipFossil
+.ShowFossil2
+	ld a, HS_MT_MOON_B2F_FOSSIL_2
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+	SetEvent EVENT_GOT_EXTRA_FOSSIL
+	jr .SkipFossil
+.SkipFossil
+	jp TextScriptEnd
 	ret
 
 HallOfFame_TextPointers:

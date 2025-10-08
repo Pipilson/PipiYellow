@@ -793,6 +793,7 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 ; Post Game events
 	const_next $9E0
 	const EVENT_PLAYER_IS_CHAMPION
+	const EVENT_GOT_EXTRA_FOSSIL
 
 ; End of events
 	const_next $A00
