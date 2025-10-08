@@ -28,6 +28,9 @@ SnorlaxSprite::          INCBIN "gfx/sprites/snorlax.2bpp"
 OldAmberSprite::         INCBIN "gfx/sprites/old_amber.2bpp"
 GamblerAsleepSprite::    INCBIN "gfx/sprites/gambler_asleep.2bpp"
 QuestionMarkSprite::     INCBIN "gfx/sprites/question_mark.2bpp"
+MistySprite::            INCBIN "gfx/sprites/misty.2bpp"
+BlaineSprite::           INCBIN "gfx/sprites/blaine.2bpp"
+ErikaSprite::            INCBIN "gfx/sprites/erika.2bpp"
 
 
 SECTION "NPC Sprites 2", ROMX
@@ -72,6 +75,7 @@ AgathaSprite::           INCBIN "gfx/sprites/agatha.2bpp"
 BrunoSprite::            INCBIN "gfx/sprites/bruno.2bpp"
 LoreleiSprite::          INCBIN "gfx/sprites/lorelei.2bpp"
 SeelSprite::             INCBIN "gfx/sprites/seel.2bpp"
+SabrinaSprite::          INCBIN "gfx/sprites/sabrina.2bpp"
 
 
 SECTION "NPC Sprites 3", ROMX
