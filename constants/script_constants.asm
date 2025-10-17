@@ -27,15 +27,20 @@ DEF SLOTS_SOMEONESKEYS EQU $ff
 	const_def
 	const TRADE_FOR_GURIO
 	const TRADE_FOR_MILES
-	const TRADE_FOR_STINGER ; unused
+	const TRADE_FOR_ROUGELA   ; jynx
 	const TRADE_FOR_STICKY
-	const TRADE_FOR_BART    ; unused
+	const TRADE_FOR_ELEBOO    ; electabuzz
 	const TRADE_FOR_SPIKE
-	const TRADE_FOR_MARTY   ; unused
+	const TRADE_FOR_BOOBER    ; magmar
 	const TRADE_FOR_BUFFY
 	const TRADE_FOR_CEZANNE
 	const TRADE_FOR_RICKY
-	const TRADE_WITH_SELF
+	const TRADE_WITH_SELF     ; trader
+	const TRADE_FOR_JESSIE    ; rocket
+	const TRADE_FOR_ZIGGY	  ; rocket
+	const TRADE_FOR_JAMES	  ; rocket
+	const TRADE_FOR_STINGER   ; extra
+	const TRADE_FOR_RAICHUCA  ; extra
 DEF NUM_NPC_TRADES EQU const_value
 
 ; in game trade dialog sets
@@ -45,6 +50,7 @@ DEF NUM_NPC_TRADES EQU const_value
 	const TRADE_DIALOGSET_EVOLUTION
 	const TRADE_DIALOGSET_HAPPY
 	const TRADE_DIALOGSET_SELF
+
 DEF NUM_TRADE_DIALOGSETS EQU const_value
 
 ; OaksAideScript results

@@ -155,3 +155,7 @@ _ViridianForestLeavingSignText::
 	line "VIRIDIAN FOREST"
 	cont "PEWTER CITY AHEAD"
 	done
+
+_ViridianForestTradeText::
+	text "Not ready..."
+	done

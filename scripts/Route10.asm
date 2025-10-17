@@ -21,6 +21,7 @@ Route10_TextPointers:
 	dw_const Route10CooltrainerF1Text,  TEXT_ROUTE10_COOLTRAINER_F1
 	dw_const Route10Hiker2Text,         TEXT_ROUTE10_HIKER2
 	dw_const Route10CooltrainerF2Text,  TEXT_ROUTE10_COOLTRAINER_F2
+	dw_const Route10TradeText, 			TEXT_ROUTE10_TRADE
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN
 	dw_const PokeCenterSignText,        TEXT_ROUTE10_POKECENTER_SIGN
 	dw_const Route10RockTunnelSignText, TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN
@@ -157,3 +158,15 @@ Route10RockTunnelSignText:
 Route10PowerPlantSignText:
 	text_far _Route10PowerPlantSignText
 	text_end
+
+Route10TradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_ELEBOO
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _Route10TradeText
+	text_end
+jp TextScriptEnd

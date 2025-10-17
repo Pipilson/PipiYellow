@@ -25,6 +25,7 @@ ViridianForest_TextPointers:
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POTION2
 	dw_const PickUpItemText,                    TEXT_VIRIDIANFOREST_POKE_BALL
 	dw_const ViridianForestYoungster6Text,      TEXT_VIRIDIANFOREST_YOUNGSTER6
+	dw_const ViridianForestTradeText,      		TEXT_VIRIDIANFOREST_TRADE
 	dw_const ViridianForestTrainerTips1Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS1
 	dw_const ViridianForestUseAntidoteSignText, TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN
 	dw_const ViridianForestTrainerTips2Text,    TEXT_VIRIDIANFOREST_TRAINER_TIPS2
@@ -173,3 +174,15 @@ ViridianForestSign_Common:
 	ld b, BANK(ViridianForestPrintTrainerTips1Text)
 	call Bankswitch
 	jp TextScriptEnd
+
+ViridianForestTradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_STINGER
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _ViridianForestTradeText
+	text_end
+jp TextScriptEnd

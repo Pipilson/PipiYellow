@@ -10,3 +10,7 @@ _SaffronPokecenterGentlemanText::
 	cont "why it attracted"
 	cont "TEAM ROCKET!"
 	done
+
+_SaffronPokecenterTradeText::
+	text "Not ready..."
+	done

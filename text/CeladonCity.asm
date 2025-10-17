@@ -152,3 +152,7 @@ _CeladonCityTrainerTips1Text::
 	line "CELADON DEPT."
 	cont "STORE!"
 	done
+
+_CeladonCityTradeText::
+	text "Not ready..."
+	done

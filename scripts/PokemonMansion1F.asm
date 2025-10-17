@@ -64,6 +64,7 @@ PokemonMansion1F_ScriptPointers:
 PokemonMansion1F_TextPointers:
 	def_text_pointers
 	dw_const PokemonMansion1FScientistText, TEXT_POKEMONMANSION1F_SCIENTIST
+	dw_const PokemonMansion1FTradeText,     TEXT_POKEMONMANSION1F_TRADE
 	dw_const PickUpItemText,                TEXT_POKEMONMANSION1F_ESCAPE_ROPE
 	dw_const PickUpItemText,                TEXT_POKEMONMANSION1F_CARBOS
 	dw_const PokemonMansion1FSwitchText,    TEXT_POKEMONMANSION1F_SWITCH
@@ -129,3 +130,15 @@ PokemonMansion1FSwitchText:
 .NotPressedText:
 	text_far _PokemonMansion1FSwitchNotPressedText
 	text_end
+
+PokemonMansion1FTradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_BOOBER
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _PokemonMansion1FTradeText
+	text_end
+jp TextScriptEnd

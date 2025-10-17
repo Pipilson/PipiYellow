@@ -167,3 +167,7 @@ _VermilionCityGymSignText::
 _VermilionCityHarborSignText::
 	text "VERMILION HARBOR"
 	done
+
+_VermilionCityTradeText::
+	text "Not ready..."
+	done

@@ -74,6 +74,7 @@ Route20_TextPointers:
 	dw_const Route20Swimmer7Text,           TEXT_ROUTE20_SWIMMER7
 	dw_const Route20Swimmer8Text,           TEXT_ROUTE20_SWIMMER8
 	dw_const Route20Swimmer9Text,           TEXT_ROUTE20_SWIMMER9
+	dw_const Route20TradeText, 			    TEXT_ROUTE20_TRADE
 	dw_const Route20SeafoamIslandsSignText, TEXT_ROUTE20_SEAFOAM_ISLANDS_WEST_SIGN
 	dw_const Route20SeafoamIslandsSignText, TEXT_ROUTE20_SEAFOAM_ISLANDS_EAST_SIGN
 
@@ -284,3 +285,15 @@ Route20Swimmer9AfterBattleText:
 Route20SeafoamIslandsSignText:
 	text_far _Route20SeafoamIslandsSignText
 	text_end
+
+Route20TradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_ROUGELA
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _Route20TradeText
+	text_end
+jp TextScriptEnd

@@ -22,6 +22,7 @@ CeladonCity_TextPointers:
 	dw_const CeladonCityGramps3Text,           TEXT_CELADONCITY_GRAMPS3
 	dw_const CeladonCityFisherText,            TEXT_CELADONCITY_FISHER
 	dw_const CeladonCityPoliwrathText,         TEXT_CELADONCITY_POLIWRATH
+	dw_const CeladonCityTradeText,       	   TEXT_CELADONCITY_TRADE
 	dw_const CeladonCityRocket1Text,           TEXT_CELADONCITY_ROCKET1
 	dw_const CeladonCityRocket2Text,           TEXT_CELADONCITY_ROCKET2
 	dw_const CeladonCityTrainerTips1Text,      TEXT_CELADONCITY_TRAINER_TIPS1
@@ -141,3 +142,15 @@ CeladonCityPrizeExchangeSignText:
 CeladonCityGameCornerSignText:
 	text_far _CeladonCityGameCornerSignText
 	text_end
+
+CeladonCityTradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_JESSIE
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _CeladonCityTradeText
+	text_end
+jp TextScriptEnd

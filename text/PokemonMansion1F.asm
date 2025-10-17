@@ -27,3 +27,7 @@ _PokemonMansion1FSwitchPressedText::
 _PokemonMansion1FSwitchNotPressedText::
 	text "Not quite yet!"
 	done
+
+_PokemonMansion1FTradeText::
+	text "Not ready..."
+	done

@@ -141,6 +141,7 @@ VermilionCity_TextPointers:
 	dw_const VermilionCityMachopText,             TEXT_VERMILIONCITY_MACHOP
 	dw_const VermilionCitySailor2Text,            TEXT_VERMILIONCITY_SAILOR2
 	dw_const VermilionCityOfficerJennyText,       TEXT_VERMILIONCITY_OFFICER_JENNY
+	dw_const VermilionCityTradeText,              TEXT_VERMILIONCITY_TRADE
 	dw_const VermilionCitySignText,               TEXT_VERMILIONCITY_SIGN
 	dw_const VermilionCityNoticeSignText,         TEXT_VERMILIONCITY_NOTICE_SIGN
 	dw_const MartSignText,                        TEXT_VERMILIONCITY_MART_SIGN
@@ -286,3 +287,15 @@ VermilionCityOfficerJennyText:
 	text_asm
 	farcall VermilionCityPrintOfficerJennyText
 	jp TextScriptEnd
+
+VermilionCityTradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_RAICHUCA
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _VermilionCityTradeText
+	text_end
+jp TextScriptEnd

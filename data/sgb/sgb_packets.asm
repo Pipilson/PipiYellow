@@ -143,7 +143,7 @@ PalPacket_TownMap:            PAL_SET PAL_ROUTE, 0, 0, 0
 PalPacket_Pokedex:            PAL_SET PAL_BROWNMON, 0, 0, 0
 PalPacket_Slots:              PAL_SET PAL_SNAKEMON, PAL_CINNABAR, PAL_VIRIDIAN, PAL_CERULEAN
 PalPacket_Titlescreen:        PAL_SET PAL_LOGO2, PAL_PIKAMON, PAL_PIKAMON, PAL_PURPLEMON
-PalPacket_TrainerCard:        PAL_SET PAL_PIKAMON, PAL_CAVE, PAL_REDMON, PAL_YELLOWMON
+PalPacket_TrainerCard:        PAL_SET PAL_PIKAMON, PAL_BLUEMON, PAL_REDMON, PAL_YELLOWMON
 PalPacket_Generic:            PAL_SET PAL_PIKAMON, 0, 0, 0
 PalPacket_NidorinoIntro:      PAL_SET PAL_PURPLEMON, PAL_BLACK, 0, 0
 PalPacket_GameFreakIntro:     PAL_SET PAL_YELLOWMON, PAL_REDMON, PAL_VIRIDIAN, PAL_BLUEMON

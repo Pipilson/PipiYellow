@@ -106,3 +106,7 @@ _Route10RockTunnelSignText::
 _Route10PowerPlantSignText::
 	text "POWER PLANT"
 	done
+
+_Route10TradeText::
+	text "Not ready..."
+	done

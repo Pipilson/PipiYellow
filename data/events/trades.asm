@@ -9,15 +9,21 @@ TradeMons:
 	; "went and evolved" and also changed the trades to match. English
 	; Red/Blue uses the original JP Red/Green trades but with the JP Blue
 	; post-trade text.
-	db LICKITUNG,  DUGTRIO,  TRADE_DIALOGSET_CASUAL,    "GURIO@@@@@@"
-	db CLEFAIRY,   MR_MIME,  TRADE_DIALOGSET_CASUAL,    "MILES@@@@@@"
-	db BUTTERFREE, BEEDRILL, TRADE_DIALOGSET_HAPPY,     "STINGER@@@@" ; unused
-	db KANGASKHAN, MUK,      TRADE_DIALOGSET_CASUAL,    "STICKY@@@@@"
-	db MEW,        MEW,      TRADE_DIALOGSET_HAPPY,     "BART@@@@@@@" ; unused
-	db TANGELA,    PARASECT, TRADE_DIALOGSET_CASUAL,    "SPIKE@@@@@@"
-	db PIDGEOT,    PIDGEOT,  TRADE_DIALOGSET_EVOLUTION, "MARTY@@@@@@" ; unused
-	db GOLDUCK,    RHYDON,   TRADE_DIALOGSET_EVOLUTION, "BUFFY@@@@@@"
-	db GROWLITHE,  DEWGONG,  TRADE_DIALOGSET_HAPPY,     "CEZANNE@@@@"
-	db CUBONE,     MACHOKE,  TRADE_DIALOGSET_HAPPY,     "RICKY@@@@@@"
-	db NO_MON,     NO_MON,   TRADE_DIALOGSET_SELF,      "Unseen@@@@@"
+	db LICKITUNG,  DUGTRIO,    TRADE_DIALOGSET_CASUAL,    "GURIO@@@@@@"
+	db CLEFAIRY,   MR_MIME,    TRADE_DIALOGSET_CASUAL,    "MILES@@@@@@"
+	db NIDOQUEEN,  JYNX,       TRADE_DIALOGSET_HAPPY,     "ROUGELA@@@@" ; jynx
+	db KANGASKHAN, MUK,        TRADE_DIALOGSET_CASUAL,    "STICKY@@@@@"
+	db POLIWRATH,  ELECTABUZZ, TRADE_DIALOGSET_HAPPY,     "ELEBOO@@@@@" ; electabuzz
+	db TANGELA,    PARASECT,   TRADE_DIALOGSET_CASUAL,    "SPIKE@@@@@@"
+	db VILEPLUME,  MAGMAR,     TRADE_DIALOGSET_HAPPY,     "BOOBER@@@@@" ; magmar
+	db GOLDUCK,    RHYDON,     TRADE_DIALOGSET_EVOLUTION, "BUFFY@@@@@@"
+	db GROWLITHE,  DEWGONG,    TRADE_DIALOGSET_HAPPY,     "CEZANNE@@@@"
+	db CUBONE,     MACHOKE,    TRADE_DIALOGSET_HAPPY,     "RICKY@@@@@@"
+	db NO_MON,     NO_MON,     TRADE_DIALOGSET_SELF,      "Unseen@@@@@" ; trader
+	db MACHAMP,    EKANS,      TRADE_DIALOGSET_CASUAL,    "JESSIE@@@@@" ; rocket
+	db ALAKAZAM,   MEOWTH,     TRADE_DIALOGSET_CASUAL,    "ZIGGY@@@@@@" ; rocket
+	db GOLEM,      KOFFING,    TRADE_DIALOGSET_CASUAL,    "JAMES@@@@@@" ; rocket
+	db BUTTERFREE, WEEDLE,     TRADE_DIALOGSET_HAPPY,     "STINGER@@@@" ; extra
+	db JOLTEON,    RAICHU,     TRADE_DIALOGSET_HAPPY,     "RAICHUCA@@@" ; extra
+
 	assert_table_length NUM_NPC_TRADES

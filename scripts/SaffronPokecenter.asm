@@ -10,6 +10,7 @@ SaffronPokecenter_TextPointers:
 	dw_const SaffronPokecenterLinkReceptionistText, TEXT_SAFFRONPOKECENTER_LINK_RECEPTIONIST
 	dw_const SaffronPokecenterChanseyText,          TEXT_SAFFRONPOKECENTER_CHANSEY
 	dw_const SaffronPokecenterTraderText,           TEXT_SAFFRONPOKECENTER_TRADER
+	dw_const SaffronPokecenterTradeText,           TEXT_SAFFRONPOKECENTER_TRADE
 
 SaffronPokecenterNurseText:
 	script_pokecenter_nurse
@@ -36,3 +37,15 @@ SaffronPokecenterTraderText:
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
 	jp TextScriptEnd
+
+SaffronPokecenterTradeText:
+	text_asm
+	CheckEvent EVENT_PLAYER_IS_CHAMPION
+	jp z, .NotReady
+	ld a, TRADE_FOR_JAMES
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+.NotReady:
+	text_far _SaffronPokecenterTradeText
+	text_end
+jp TextScriptEnd

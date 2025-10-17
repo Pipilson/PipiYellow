@@ -233,3 +233,7 @@ _CeruleanCityGymSign::
 	para "The Tomboyish"
 	line "Mermaid!"
 	done
+
+_CeruleanCityTradeText::
+	text "Not ready..."
+	done
