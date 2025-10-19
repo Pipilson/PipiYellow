@@ -794,7 +794,8 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const_next $9E0
 	const EVENT_PLAYER_IS_CHAMPION
 	const EVENT_GOT_EXTRA_FOSSIL
-	const EVENT_TEST
+	const_skip 15
+	const EVENT_BEAT_MEW
 
 ; End of events
 	const_next $A00

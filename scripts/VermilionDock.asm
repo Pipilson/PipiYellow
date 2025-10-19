@@ -211,7 +211,32 @@ VermilionDock_EraseSSAnne:
 VermilionDock_TextPointers:
 	def_text_pointers
 	dw_const VermilionDockUnusedText, TEXT_VERMILIONDOCK_UNUSED
+	dw_const VermilionDockMewText,    TEXT_VERMILIONDOCK_MEW
+
+VermilionDockTrainerHeaders:
+	def_trainers
+MewTrainerHeader:
+	trainer EVENT_BEAT_MEW, 0, MewBattleText, MewBattleText, MewBattleText
+	db -1 ; end
 
 VermilionDockUnusedText:
 	text_far _VermilionDockUnusedText
 	text_end
+
+VermilionDockMewText:
+	text_asm
+	CheckEvent EVENT_BEAT_MEW
+	jp nz, .Skip
+	ld hl, MewTrainerHeader
+	call TalkToTrainer
+	SetEvent EVENT_BEAT_MEW
+.Skip:
+	jp TextScriptEnd
+
+MewBattleText:
+	text_far _MewBattleText
+	text_asm
+	ld a, MEW
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
