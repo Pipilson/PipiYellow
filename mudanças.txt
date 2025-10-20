@@ -1,0 +1,47 @@
+-Pokédex agora mostra peso dos pokémon em kilos e a altrua em metros.
+
+-Batalha com a Elite Four agora toca a música de batalha de Líder de Ginásio, ao invés da padrão.
+
+-Correção de um bug que não faz um loop correto para geração de pokémon selvagem.
+
+-Correção para o pokémon conseguir aprender mais de 1 ataque por level.
+
+-Ícone de pokébola ao lado do nome de um pokémon que já está registrado na pokédex.
+
+-TMs podem ser usados infinitas vezes, assim como HMs.
+
+-Refeito o sistema de compartilhar experiência: Ao invés de dividir a experciência obtida na batalha, todos os pokémon
+que participaram do combate recebem 100% da experiência. Além disso, "EXP.ALL" renomeado para "EXP.SHARE" e também da
+100% da experiência para o time todo.
+
+-Novas palhetas de cores para o sistema, que são usadas para definir todas as cores usadas em jogo. Aproveitando as
+novas palhetas, todo pokémon recebeu uma nova imagem de batalha importada do Pokémon Gold/Silver/Crystal com alguns
+ajustes feitos por mim.
+
+-Alterei o nome do menu "ITEM" para "BAG".
+
+-Reduzi o preço de todos os items do Game Corner em 66%, agora custando 1/3 do preço original.
+
+-Celadon Department Store agora também vende MOON STONE e PP UP.
+
+-Novo NPC "TRADER" adicionado em todos os Pokémon Center, permitindo que o jogador troque um pokémon por ele mesmo.
+Assim sendo possível evoluir os pokémon de troca sem realmente trocar.
+
+-Safari Zone funciona como qualquer outra rota, deixando de ser uma área especial. Você pode usar seus pokémon do
+Safari Zone e os pokémon selvagem da região não vão fugir.
+
+-Adicionei um novo time de revanche para todos os líderes de ginásio, sendo possível enfrentá-los conversando com eles
+depois de se tornar campeão. Elite Four e o Rival também ganharam um novo time de revanche, sendo possível enfrentá-los
+depois do jogador se tornar campeão.
+
+-Novo sprite overworld para o Koga, Blaine, Misty, Sabrina e Erika
+
+-Ao vencer a Elite Four e o Rival Campeão, o Eevee em Celadon reseta toda vez, o outro pokémon lutador do dojo fica
+disponível, o fossil não pego pelo jogador volta para a Mt. Moon e o jogador pode voltar à Doca de Vermilion.
+
+-Novas trocas com NPCs para conseguir Jynx, Electabuzz, Magmar, Ekans, Meowth, Koffing, Weedle e Raichu.
+
+-Corrigida a animação do ataque Psychic, do ataque Double-Edge e da máquina que cura os pokémon no centro pokémon.
+
+-Corrigido um bug que fazia aparecer errado a mensagem que diz se um ataque é super-efetivo ou não, quando o
+pokémon defendendo tem 2 tipos.
