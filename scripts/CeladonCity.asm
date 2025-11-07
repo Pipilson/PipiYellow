@@ -22,7 +22,7 @@ CeladonCity_TextPointers:
 	dw_const CeladonCityGramps3Text,           TEXT_CELADONCITY_GRAMPS3
 	dw_const CeladonCityFisherText,            TEXT_CELADONCITY_FISHER
 	dw_const CeladonCityPoliwrathText,         TEXT_CELADONCITY_POLIWRATH
-	dw_const CeladonCityTradeText,       	   TEXT_CELADONCITY_TRADE
+	;dw_const CeladonCityTradeText,       	   TEXT_CELADONCITY_TRADE
 	dw_const CeladonCityRocket1Text,           TEXT_CELADONCITY_ROCKET1
 	dw_const CeladonCityRocket2Text,           TEXT_CELADONCITY_ROCKET2
 	dw_const CeladonCityTrainerTips1Text,      TEXT_CELADONCITY_TRAINER_TIPS1

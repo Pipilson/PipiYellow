@@ -8,11 +8,13 @@
 
 -Ícone de pokébola ao lado do nome de um pokémon que já está registrado na pokédex.
 
--TMs podem ser usados infinitas vezes, assim como HMs.
+-TMs podem ser usados infinitas vezes, assim como HMs. (O jogo ainda mostra a quantidade de TMs que você tem,
+como se fossem finitos).
 
 -Refeito o sistema de compartilhar experiência: Ao invés de dividir a experciência obtida na batalha, todos os pokémon
 que participaram do combate recebem 100% da experiência. Além disso, "EXP.ALL" renomeado para "EXP.SHARE" e também da
-100% da experiência para o time todo.
+100% da experiência para o time todo. (Existe um pequeno delay na mensagem, do tempo de processamento de todos os
+cálculos. Conseguir muita experiência pode causar um glitch visual onde o número é renderizado errado no texto).
 
 -Novas palhetas de cores para o sistema, que são usadas para definir todas as cores usadas em jogo. Aproveitando as
 novas palhetas, todo pokémon recebeu uma nova imagem de batalha importada do Pokémon Gold/Silver/Crystal com alguns
@@ -28,7 +30,8 @@ ajustes feitos por mim.
 Assim sendo possível evoluir os pokémon de troca sem realmente trocar.
 
 -Safari Zone funciona como qualquer outra rota, deixando de ser uma área especial. Você pode usar seus pokémon do
-Safari Zone e os pokémon selvagem da região não vão fugir.
+Safari Zone e os pokémon selvagem da região não vão fugir. (O menu de pause do Safari ainda mostra quantas
+Safari Ball o jogador tem).
 
 -Adicionei um novo time de revanche para todos os líderes de ginásio, sendo possível enfrentá-los conversando com eles
 depois de se tornar campeão. Elite Four e o Rival também ganharam um novo time de revanche, sendo possível enfrentá-los
@@ -36,10 +39,13 @@ depois do jogador se tornar campeão.
 
 -Novo sprite overworld para o Koga, Blaine, Misty, Sabrina e Erika
 
--Ao vencer a Elite Four e o Rival Campeão, o Eevee em Celadon reseta toda vez, o outro pokémon lutador do dojo fica
-disponível, o fossil não pego pelo jogador volta para a Mt. Moon e o jogador pode voltar à Doca de Vermilion.
+-Ao vencer a Elite Four e o Rival Campeão, o Eevee em Celadon reseta toda vez, o outro pokémon lutador do Saffron Dojo
+fica disponível, o fossil não pego pelo jogador volta para a Mt. Moon e o jogador pode voltar à Doca de Vermilion.
+(Adicionei um novo objeto na Doca de Vermilion que só é interagivel 1 vez. Por causa de um bug, ao invés de
+desaparecer depois da primeira interação, o objeto para de interagir com o jogador).
 
--Novas trocas com NPCs para conseguir Jynx, Electabuzz, Magmar, Ekans, Meowth, Koffing, Weedle e Raichu.
+-Novas trocas com NPCs para conseguir Jynx, Electabuzz, Magmar, Ekans, Meowth, Koffing, Weedle e Raichu. (Existe um
+glitch visual nessas trocas onde os pokémon aparecem com parte do sprite renderizados incorretamente).
 
 -Corrigida a animação do ataque Psychic, do ataque Double-Edge e da máquina que cura os pokémon no centro pokémon.
 

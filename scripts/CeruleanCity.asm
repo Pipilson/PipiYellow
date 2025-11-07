@@ -218,7 +218,7 @@ CeruleanCity_TextPointers:
 	dw_const CeruleanCityRivalText,         TEXT_CERULEANCITY_RIVAL
 	dw_const CeruleanCityRocketText,        TEXT_CERULEANCITY_ROCKET
 	dw_const CeruleanCityCooltrainerMText,  TEXT_CERULEANCITY_COOLTRAINER_M
-	dw_const CeruleanCityTradeText,	        TEXT_CERULEANCITY_TRADE
+	;dw_const CeruleanCityTradeText,	        TEXT_CERULEANCITY_TRADE
 	dw_const CeruleanCitySuperNerd1Text,    TEXT_CERULEANCITY_SUPER_NERD1
 	dw_const CeruleanCitySuperNerd2Text,    TEXT_CERULEANCITY_SUPER_NERD2
 	dw_const CeruleanCityGuardText,         TEXT_CERULEANCITY_GUARD1
